@@ -54,6 +54,7 @@
     .drive-card {
       position: relative;
       overflow: hidden;
+      width: 100%;
       min-height: 520px;
       display: flex;
       align-items: center;
@@ -81,6 +82,11 @@
       box-shadow: 0 22px 55px rgba(11, 31, 58, 0.25);
       color: white;
       text-align: center;
+      box-sizing: border-box;
+    }
+
+    .drive-card + .drive-card {
+      margin-top: 40px;
     }
 
     .drive-card::before {
@@ -108,6 +114,7 @@
     .drive-card-content {
       position: relative;
       z-index: 1;
+      width: 100%;
       max-width: 760px;
     }
 
@@ -126,10 +133,20 @@
     }
 
     .drive-card p {
-      max-width: 650px;
+      max-width: 700px;
       margin: 22px auto 0;
       color: rgba(255, 255, 255, 0.88);
       font-size: 1.15rem;
+    }
+
+    .policy-link {
+      color: #ffd27a;
+      font-weight: bold;
+    }
+
+    .policy-link:hover,
+    .policy-link:focus {
+      color: white;
     }
 
     .drive-button {
@@ -151,7 +168,8 @@
         box-shadow 180ms ease;
     }
 
-    .drive-button:hover {
+    .drive-button:hover,
+    .drive-button:focus {
       transform: translateY(-4px);
       background: #9e4317;
       box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
@@ -194,6 +212,7 @@
 
       .drive-button {
         width: 100%;
+        box-sizing: border-box;
       }
     }
   </style>
@@ -233,7 +252,7 @@
         </li>
 
         <li>
-          <a href="policies.html">Terms & Policies</a>
+          <a href="policies.html">Terms &amp; Policies</a>
         </li>
       </ul>
     </nav>
@@ -278,6 +297,34 @@
         </div>
       </div>
 
+      <div class="drive-card reveal">
+        <div class="drive-card-content">
+          <span class="folder-icon" aria-hidden="true">📤</span>
+
+          <h2>Share a Resource</h2>
+
+          <p>
+            Whether you are an approved <strong>MoCoTutor</strong> or a
+            student looking to share a helpful resource, submit your
+            contributions to the database here! We will make sure your
+            submission meets our guidelines (see
+            <a class="policy-link" href="policies.html">
+              Terms, Policies, and Conditions
+            </a>)
+            and your resource can help thousands of other students!
+          </p>
+
+          <a
+            class="drive-button"
+            href="https://forms.google.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Submit a Resource →
+          </a>
+        </div>
+      </div>
+
       <div class="access-note reveal">
         <h3>Having trouble accessing the folder?</h3>
 
@@ -290,38 +337,6 @@
     </section>
   </main>
 
-<div class="drive-card reveal" style="margin-top:40px>
-
-    <div class="drive-card-content">
-
-        <span class="folder-icon">📤</span>
-
-        <h2>Share a Resource</h2>
-
-        <p style="max-width:700px;">
-            Whether you are an approved <strong>MoCoTutor</strong> or a
-            student looking to share a helpful resource, submit your
-            contributions to the database here! We will make sure your
-            submission meets our guidelines (see
-            <a href="policies.html"
-               style="color:#ffd27a; font-weight:bold;">
-                Terms, Policies, and Conditions</a>)
-            and your resource can help thousands of other students!
-        </p>
-
-        <a
-            class="drive-button"
-            href="https://forms.google.com"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            Submit a Resource →
-        </a>
-
-    </div>
-
-</div>
-  
   <footer class="site-footer">
     <p>
       © <span class="current-year"></span> MoCoTutoring. Resources are
