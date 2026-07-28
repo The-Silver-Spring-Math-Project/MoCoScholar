@@ -36,7 +36,7 @@ a {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: #314E6E;
+  background: rgba(11, 31, 58, 0.96);
   backdrop-filter: blur(12px);
   border-bottom: 3px solid var(--rust);
 }
@@ -550,21 +550,4 @@ a {
   .nav-links a {
     transition: none;
   }
-}
-
-.brand-with-logo {
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-    text-decoration: none;
-}
-
-.site-logo {
-    width: 55px;
-    height: 55px;
-    object-fit: contain;
-}
-
-.brand-name {
-    display: inline-block;
 }
