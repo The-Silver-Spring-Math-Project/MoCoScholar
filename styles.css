@@ -551,3 +551,21 @@ a {
     transition: none;
   }
 }
+
+.brand-with-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.site-logo {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.brand-name {
+    display: inline-block;
+}
