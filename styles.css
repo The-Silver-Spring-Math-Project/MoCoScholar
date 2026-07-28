@@ -36,7 +36,7 @@ a {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: #FFFFFF;
+  background: #314E6E;
   backdrop-filter: blur(12px);
   border-bottom: 3px solid var(--rust);
 }
@@ -560,8 +560,8 @@ a {
 }
 
 .site-logo {
-    width: 40px;
-    height: 40px;
+    width: 55px;
+    height: 55px;
     object-fit: contain;
 }
 
