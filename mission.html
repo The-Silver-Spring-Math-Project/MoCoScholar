@@ -13,6 +13,126 @@
 
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
+
+  <style>
+    .join-team-section {
+      width: min(1180px, 90%);
+      margin: 0 auto;
+      padding: 0 0 90px;
+    }
+
+    .join-team-card {
+      position: relative;
+      overflow: hidden;
+      padding: 55px 40px;
+      border-radius: 24px;
+      background:
+        radial-gradient(
+          circle at 15% 20%,
+          rgba(198, 93, 36, 0.38),
+          transparent 30%
+        ),
+        linear-gradient(
+          135deg,
+          #0b1f3a 0%,
+          #153a66 70%,
+          #09182c 100%
+        );
+      box-shadow: 0 20px 45px rgba(11, 31, 58, 0.2);
+      color: white;
+      text-align: center;
+    }
+
+    .join-team-card::before {
+      content: "";
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      top: -170px;
+      right: -90px;
+      border: 2px solid rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+    }
+
+    .join-team-content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .join-team-card .kicker {
+      color: #f0a16a;
+    }
+
+    .join-team-card h2 {
+      margin: 5px 0 18px;
+      color: white;
+      font-size: clamp(2.2rem, 5vw, 4rem);
+      line-height: 1.1;
+    }
+
+    .join-team-card p {
+      max-width: 760px;
+      margin: 0 auto;
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 1.15rem;
+    }
+
+    .team-roles {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin: 28px auto 0;
+    }
+
+    .team-role {
+      padding: 8px 14px;
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.08);
+      color: white;
+      font-size: 0.95rem;
+    }
+
+    .join-team-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 32px;
+      padding: 15px 30px;
+      border: 2px solid white;
+      border-radius: 999px;
+      background: #c65d24;
+      color: white;
+      text-decoration: none;
+      font-size: 1.08rem;
+      font-weight: bold;
+      transition:
+        transform 180ms ease,
+        background 180ms ease,
+        box-shadow 180ms ease;
+    }
+
+    .join-team-button:hover,
+    .join-team-button:focus {
+      transform: translateY(-4px);
+      background: #9e4317;
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
+    }
+
+    @media (max-width: 700px) {
+      .join-team-card {
+        padding: 45px 22px;
+      }
+
+      .join-team-button {
+        width: 100%;
+        box-sizing: border-box;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -36,7 +156,7 @@
         <li><a href="mission.html">Mission</a></li>
         <li><a href="tutors.html">Tutors</a></li>
         <li><a href="database.html">Database</a></li>
-        <li><a href="policies.html">Terms & Policies</a></li>
+        <li><a href="policies.html">Terms &amp; Policies</a></li>
       </ul>
     </nav>
   </header>
@@ -59,10 +179,11 @@
       <div class="mission-text reveal">
         <p>
           MoCoScholar's mission is to help connect those who have taken
-          math and computer science classes that align with MCPS curricula with those stepping into
-          that new experience for the first time. Students who have taken
-          classes in these subjects in MCPS schools can share helpful notes, videos, and
-          insight for others to use while taking those classes.
+          math and computer science classes that align with MCPS curricula
+          with those stepping into that new experience for the first time.
+          Students who have taken classes in these subjects in MCPS schools
+          can share helpful notes, videos, and insight for others to use
+          while taking those classes.
         </p>
 
         <p>
@@ -92,28 +213,78 @@
         <article class="profile-card founder reveal">
           <h3>Reuben</h3>
 
-          <!-- Replace these placeholders. -->
           <p class="profile-meta">Grade: 11</p>
-          <p>School: Montgomery Blair High School</p>
-          <p>Background: I have a passion to make education more accessible to all.
-            As a volunteer with Schoolhouse.world and tutor at Mathnasium, I understand the importance of offering a plethora of targeted, helpful explainations to help every student succeed.
-            I helped to create MoCoScholar to help ensure that every student -- no matter the subject they're learning or level they're at -- can recieve quality explanations that meet them where they are.</p>
+
+          <p>
+            School: Montgomery Blair High School
+          </p>
+
+          <p>
+            Background: I have a passion to make education more accessible
+            to all. As a volunteer with Schoolhouse.world and tutor at
+            Mathnasium, I understand the importance of offering a plethora
+            of targeted, helpful explanations to help every student succeed.
+            I helped to create MoCoScholar to help ensure that every student
+            — no matter the subject they're learning or level they're at —
+            can receive quality explanations that meet them where they are.
+          </p>
         </article>
 
         <article class="profile-card founder reveal">
           <h3>Abdoul</h3>
 
-          <!-- Replace these placeholders. -->
           <p class="profile-meta">Grade: 10</p>
-          <p>School: James Hubert Blake High School</p>
-          <p>Background: XYZ</p>
+
+          <p>
+            School: James Hubert Blake High School
+          </p>
+
+          <p>
+            Background: XYZ
+          </p>
         </article>
+      </div>
+    </section>
+
+    <section class="join-team-section">
+      <div class="join-team-card reveal">
+        <div class="join-team-content">
+          <p class="kicker">Get involved</p>
+
+          <h2>Join the MoCoScholar Team</h2>
+
+          <p>
+            Want to help build MoCoScholar beyond creating tutoring
+            resources? We're looking for students interested in helping
+            review content, manage the website, expand our outreach, and
+            support the growth of the platform across the MCPS community.
+          </p>
+
+          <div class="team-roles">
+            <span class="team-role">Content Review Manager</span>
+            <span class="team-role">Website Manager</span>
+            <span class="team-role">Outreach Coordinator</span>
+            <span class="team-role">Community Engagement</span>
+            <span class="team-role">Other Leadership Roles</span>
+          </div>
+
+          <a
+            class="join-team-button"
+            href="https://forms.google.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Apply to Join the Team →
+          </a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>© <span class="current-year"></span> MoCoScholar.</p>
+    <p>
+      © <span class="current-year"></span> MoCoScholar.
+    </p>
   </footer>
 </body>
 </html>
