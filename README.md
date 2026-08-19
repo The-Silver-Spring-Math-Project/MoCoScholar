@@ -34,7 +34,7 @@ Explains the mission behind MoCoScholar, introduces its founders, and provides o
 
 Introduces participating student tutors, including their school, grade, and subjects or courses in which they are comfortable providing explanations.
 
-Students can also apply to become a MoCoTutor.
+Students can also apply to become a MoCoScholar.
 
 ### Database
 
